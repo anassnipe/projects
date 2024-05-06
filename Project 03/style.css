@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    /* background-color: rgb(139, 113, 78); */
+}
+h1,h3{
+    color: rgb(247, 240, 240);
+}
+textarea{
+    color: grey;
+    width: 400px;
+    background-color: rgb(246, 244, 238);
+    resize: none;
+    outline: none;
+    border-radius: 4px;
+
+}
+.hero{
+    color:rgb(252, 242, 242); 
+
+}
+.inputfield{
+    width: 400px;
+    height: 30px;
+    outline: none;
+    
+}
+
+ /* button{
+    margin-left: 400px;
+    height: 60px;
+    width: 170px;
+    text-align: center;
+    background-color: rgb(147, 159, 160);
+    cursor: pointer;
+ } */
+ /* label for[checkbox]{
+    color: white;
+ }
+ .zero{
+    color:white;
+    margin-right: 15px;
+    cursor: pointer;
+ } */
+
+ .zero inut{
+    margin-right: 70px;
+ }

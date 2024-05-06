@@ -1,0 +1,15 @@
+.parent{
+    width: 70%;
+    height: 70vh;
+    background-color: aquamarine;
+    padding: 10px;
+    position: relative;
+}
+.child{
+    background-color:blue;
+    width: 100px;
+    height: 100px;
+    position: sticky;
+    bottom: 0;
+    top: 0;
+}
