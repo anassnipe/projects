@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggestion Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .suggestion-form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .suggestion-form h2 {
+            text-align: center;
+        }
+
+        .suggestion-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .suggestion-form input[type="text"],
+        .suggestion-form input[type="email"],
+        .suggestion-form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .suggestion-form textarea {
+            resize: vertical;
+        }
+
+        .suggestion-form button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .suggestion-form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Suggestion Page</h1>
+    </header>
+
+    <main>
+        <div class="suggestion-form">
+            <h2>Submit Your Suggestion</h2>
+            <form id="suggestionForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="suggestion">Your Suggestion:</label>
+                <textarea id="suggestion" name="suggestion" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>Thank you for visiting! Your feedback is appreciated.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const suggestionForm = document.getElementById('suggestionForm');
+
+            suggestionForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const suggestion = document.getElementById('suggestion').value;
+
+                const mailToLink = `mailto:dalhaali1965@gmail.com?subject=Suggestion from ${name}&body=${suggestion}%0D%0A%0D%0AFrom: ${email}`;
+
+                window.location.href = mailToLink;
+            });
+        });
+    </script>
+</body>
+</html>
