@@ -1,0 +1,17 @@
+.loader{
+    width: 100%;
+    height: 100vh;
+    background-image: url(grey-9026_128.gif);
+    position: fixed;
+    background-color: black;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background-size: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.pre-loader-disappaer{
+    display: none;
+}
